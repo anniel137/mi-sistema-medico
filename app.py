@@ -72,3 +72,4 @@ elif opcion == "Historial":
         st.dataframe(df_reciente.drop(columns=["Fecha_Registro"]))
         csv = df_reciente.to_csv(index=False, encoding='utf-8').encode('utf-8')
         st.download_button("📥 Descargar CSV", csv, "reporte.csv", "text/csv")
+
